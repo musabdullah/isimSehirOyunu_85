@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NormalGameActivity">
+
+    <TextView
+        android:id="@+id/textCityTitle"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textCityLine"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="70dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCityTitle" />
+
+    <EditText
+        android:id="@+id/editTextGuess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Tahmin Et !"
+        android:inputType="textPersonName"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textCityLine" />
+
+    <Button
+        android:id="@+id/buttonGet"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="-20dp"
+        android:layout_marginTop="40dp"
+        android:onClick="buttonGet"
+        android:text="Harf Al"
+        android:textColor="#FFFFFF"
+        app:layout_constraintStart_toStartOf="@+id/editTextGuess"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+
+    <Button
+        android:id="@+id/buttonGuess"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="-20dp"
+        android:onClick="buttonGuess"
+        android:text="Tahmin Et"
+        app:layout_constraintEnd_toEndOf="@+id/editTextGuess"
+        app:layout_constraintTop_toBottomOf="@+id/editTextGuess" />
+</androidx.constraintlayout.widget.ConstraintLayout>
